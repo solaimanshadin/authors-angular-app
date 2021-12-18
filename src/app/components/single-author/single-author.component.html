@@ -1,0 +1,23 @@
+<div class="single-author">
+  <div class="links-and-btn">
+    <a [href]="author.link" target="_blank"
+      ><fa-icon [icon]="faExternalLinkAlt"></fa-icon
+    ></a>
+    <button
+      (click)="authorService.addFavoriteAuthor(author)"
+      class="btn-add"
+      *ngIf="!author.favorite"
+    >
+      Add Favorite
+    </button>
+    <button
+      (click)="authorService.removeFromFavoriteAuthor(author)"
+      class="btn-remove"
+      *ngIf="author.favorite"
+    >
+      Remove Favorite
+    </button>
+  </div>
+  <h3>Name: {{ author.name }}</h3>
+  <p>Bio: {{ author.bio }}</p>
+</div>

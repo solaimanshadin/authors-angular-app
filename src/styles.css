@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f8f8f8;
+}
+a {
+  text-decoration: none;
+  color: #36a3de;
+}
+.main__layout {
+  display: grid;
+  grid-template-columns: 250px 0 auto;
+}
+.authors {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+}
+.btn-add,
+.btn-remove {
+  background-color: #36a3de;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-remove {
+  background-color: #f44336;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 756px) {
+  .main__layout, .authors {
+    grid-template-columns: 1fr;
+  }
+}

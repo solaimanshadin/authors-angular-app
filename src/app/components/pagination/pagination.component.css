@@ -1,0 +1,24 @@
+.pagination {
+  text-align: center;
+  margin: 30px;
+  margin-top: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 4px #8181813b;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.pagination .btn-next,
+.pagination .btn-prev {
+  border: 0;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #36a3de;
+}
+.pagination .btn-next:disabled,
+.pagination .btn-prev:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

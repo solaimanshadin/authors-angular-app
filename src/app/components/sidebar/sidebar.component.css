@@ -1,0 +1,37 @@
+.sidebar {
+  min-height: 100vh;
+  position: fixed;
+  display: block;
+  width: 250px;
+  background-color: #fff;
+}
+.sidebar ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 20px 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #36a3de;
+  padding: 7px 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.sidebar ul li a.active {
+  background: #36a3de;
+  color: #fff;
+}
+
+@media screen and (max-width: 756px) {
+  .sidebar {
+    min-height: auto;
+    position: unset;
+    display: flex;
+    width: 100%;
+  }
+  .sidebar ul {
+    display: flex;
+  }
+}

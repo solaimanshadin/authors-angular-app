@@ -1,0 +1,15 @@
+<section>
+  <p class="text-center" *ngIf="!favoriteAuthorsOfThePage?.length">
+    No Data for the page!
+  </p>
+  <div class="authors">
+    <app-single-author
+      *ngFor="let author of favoriteAuthorsOfThePage"
+      [author]="author"
+    ></app-single-author>
+  </div>
+  <app-pagination
+    (onPaginationButtonClick)="getPageData($event)"
+    [totalCount]="favoriteAuthors.length"
+  ></app-pagination>
+</section>

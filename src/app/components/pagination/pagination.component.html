@@ -1,0 +1,9 @@
+<div class="pagination">
+  <button class="btn-prev" (click)="handlePrev()" [disabled]="isFirstPage">
+    <fa-icon [icon]="faArrowAltCircleLeft"></fa-icon>
+  </button>
+  <span>Page: {{ currentPage }}</span>
+  <button class="btn-next" (click)="handleNext()" [disabled]="isLastPage">
+    <fa-icon [icon]="faArrowAltCircleRight"></fa-icon>
+  </button>
+</div>

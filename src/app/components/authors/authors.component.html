@@ -1,0 +1,12 @@
+<section>
+  <div class="authors">
+    <app-single-author
+      *ngFor="let author of authors.results"
+      [author]="author"
+    ></app-single-author>
+  </div>
+  <app-pagination
+    (onPaginationButtonClick)="getPageData($event)"
+    [totalCount]="authors.totalCount"
+  ></app-pagination>
+</section>

@@ -1,0 +1,11 @@
+.single-author{
+    box-shadow: 0 0 1px 1px #0000000d;
+    border-radius: 7px;
+    padding: 20px;
+    height: calc(100% - 40px);
+    background-color: #fff;
+}
+.single-author .links-and-btn{
+    display: flex;
+    justify-content: space-between;
+}
